@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "title": "Leonardo Lata Ternera, Venado y Camote 400gr",
+    "description": "Alimento húmedo super-premium para gatos adultos, con carnes selectas de ternera y venado y un toque de camote para una digestión suave. Enriquecido con aceite de salmón para un pelaje saludable y un poco de catnip para mayor disfrute.",
+    "code": "C001",
+    "price": 4890,
+    "status": true,
+    "stock": 6,
+    "category": "Alimentos",
+    "thumbnails": [
+      "https://i.ibb.co/ynY1306v/leonardo-ternera-venado.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Acana Gato Bountiful Catch 1.8kg",
+    "description": "Alimento completo para gato adulto, 1,8kg. Formulado con una combinación de distintos pescados frescos.",
+    "code": "C002",
+    "price": 16100,
+    "status": true,
+    "stock": 1,
+    "category": "Alimentos",
+    "thumbnails": [
+      "https://i.ibb.co/ynsrfV64/acana-bountiful-catch-cat.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Hill's Alimento K/D Kidney Care 1.81kg",
+    "description": "El Hill’s k/d es un alimento seco especialmente formulado para apoyar la salud renal de los gatos.",
+    "code": "C003",
+    "price": 25500,
+    "status": true,
+    "stock": 2,
+    "category": "Alimentos",
+    "thumbnails": [
+      "https://i.ibb.co/MDz0M3Sy/Hills-Kidney-Care-Gato-KD-3-8-Kg.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Cats Snack Atún y Hierba Gatera",
+    "description": "Snacks o premios complementarios para gatos, formato de galleta con atún y hierba gatera.",
+    "code": "C004",
+    "price": 3000,
+    "status": true,
+    "stock": 6,
+    "category": "Snacks",
+    "thumbnails": [
+      "https://i.ibb.co/zTKRKF1W/cats-snacks-atun-con-hierba-gatera.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Churu Meal Topper Pollo 4 unidades",
+    "description": "Alimento completo y balanceado para gatos adultos en mantención.",
+    "code": "C005",
+    "price": 2990,
+    "status": true,
+    "stock": 3,
+    "category": "Snacks",
+    "thumbnails": [
+      "https://i.ibb.co/21Y1CzgJ/inaba-churu-meal-topper-sabor-pollo.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Churu Box 60 Unidades Variedades Atún",
+    "description": "Snack cremoso elaborado con ingredientes de grado humano.",
+    "code": "C006",
+    "price": 34990,
+    "status": true,
+    "stock": 2,
+    "category": "Snacks",
+    "thumbnails": [
+      "https://i.ibb.co/23FT9dvK/churu-tuna-variety-50-un.webp"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Wonder Cat Erizo Rascador con Bola de Catnip",
+    "description": "Juguete autoadhesivo con forma de erizo, con bola de catnip prensada al interior.",
+    "code": "C007",
+    "price": 2500,
+    "status": true,
+    "stock": 10,
+    "category": "Catnip y matatabi",
+    "thumbnails": [
+      "https://i.ibb.co/NdSjzzbr/catnip-erizo-2.webp"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Bioline Catnip Frasco 20gr",
+    "description": "Catnip molido en frasco de 20gr.",
+    "code": "C008",
+    "price": 3500,
+    "status": true,
+    "stock": 5,
+    "category": "Catnip y matatabi",
+    "thumbnails": [
+      "https://i.ibb.co/m55hQLrj/catnip-bioline.webp"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Bioline Spray de Matatabi 175ml",
+    "description": "Producto diseñado específicamente para gatos que combina extracto de matatabi en spray.",
+    "code": "C009",
+    "price": 4590,
+    "status": true,
+    "stock": 4,
+    "category": "Catnip y matatabi",
+    "thumbnails": [
+      "https://i.ibb.co/m5sVMpng/spray-matatabi-bioline.png"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Hey! Arenero Abierto con Pala",
+    "description": "Arenero abierto con paredes escalonadas. Incluye pala.",
+    "code": "C010",
+    "price": 8500,
+    "status": true,
+    "stock": 1,
+    "category": "Arenas y areneros",
+    "thumbnails": [
+      "https://i.ibb.co/LDbND4R7/hey-arenero-abierto.png"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "America Litter Arena Ultra Scooping 7kg",
+    "description": "Arena sanitaria de bentonita y carbón activado.",
+    "code": "C011",
+    "price": 12990,
+    "status": true,
+    "stock": 2,
+    "category": "Arenas y areneros",
+    "thumbnails": [
+      "https://i.ibb.co/JjRx2mNm/america-litter-ultra-scooping.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Pala Arenero Metálica The Poopscoop",
+    "description": "Pala metálica resistente para limpiar el arenero.",
+    "code": "C012",
+    "price": 9990,
+    "status": true,
+    "stock": 3,
+    "category": "Arenas y areneros",
+    "thumbnails": [
+      "https://i.ibb.co/rfk6R28V/pala-metalica.webp"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Pájaro con Sonido y Movimiento Flapping Toy",
+    "description": "Juguete interactivo recargable con sonido y movimiento.",
+    "code": "C013",
+    "price": 12990,
+    "status": true,
+    "stock": 3,
+    "category": "Juguetes",
+    "thumbnails": [
+      "https://i.ibb.co/wr0rQ2Yb/flapping-toy.webp"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Wonder Cat Pelota Automática",
+    "description": "Pelota recargable con movimiento y luz.",
+    "code": "C014",
+    "price": 5000,
+    "status": true,
+    "stock": 8,
+    "category": "Juguetes",
+    "thumbnails": [
+      "https://i.ibb.co/LzYD1Yxw/pelota-automatica-s.webp"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Catit Senses 2.0 Wave Circuit",
+    "description": "Juguete para gatos que estimula el comportamiento de caza.",
+    "code": "C015",
+    "price": 16200,
+    "status": true,
+    "stock": 1,
+    "category": "Juguetes",
+    "thumbnails": [
+      "https://i.ibb.co/0S4wz7D/catit-wave-circuit.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "BRNX Rascador Computador Catbook",
+    "description": "Rascador para gatos con diseño inspirado en un notebook.",
+    "code": "C016",
+    "price": 6000,
+    "status": true,
+    "stock": 2,
+    "category": "Rascadores",
+    "thumbnails": [
+      "https://i.ibb.co/GQ0V4LQH/catbook-2.webp"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Rascador Casa Azul",
+    "description": "Rascador con diseño tipo casa en tono azul.",
+    "code": "C017",
+    "price": 9990,
+    "status": true,
+    "stock": 2,
+    "category": "Rascadores",
+    "thumbnails": [
+      "https://i.ibb.co/dJVZ8Tyz/refugio-rascador-casa-azul.png"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Rascador Redondo Pequeño",
+    "description": "Rascador de cartón con forma de cuenco, incluye catnip.",
+    "code": "C018",
+    "price": 6500,
+    "status": true,
+    "stock": 5,
+    "category": "Rascadores",
+    "thumbnails": [
+      "https://i.ibb.co/fJPrdpZ/rascador-redondo.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Cama Redonda Acolchada",
+    "description": "Cama acolchada con forma redonda, base antideslizante.",
+    "code": "C019",
+    "price": 14400,
+    "status": true,
+    "stock": 2,
+    "category": "Camas y refugios",
+    "thumbnails": [
+      "https://i.ibb.co/hJN27bP1/Cama-redonda-gris.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "BRNX Cama Llama Talla L",
+    "description": "Cama con forma de llama, interior ultrasuave.",
+    "code": "C020",
+    "price": 16000,
+    "status": true,
+    "stock": 1,
+    "category": "Camas y refugios",
+    "thumbnails": [
+      "https://i.ibb.co/pvFf84Z2/cama-brnx-llama.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Bolso de Transporte",
+    "description": "Bolso de transporte para gato o perro pequeño.",
+    "code": "C021",
+    "price": 20000,
+    "status": true,
+    "stock": 1,
+    "category": "Camas y refugios",
+    "thumbnails": [
+      "https://i.ibb.co/0R13mwKM/bolso-transporte.webp"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Plato Elevado Candy Style Rosado",
+    "description": "Plato elevado desmontable de acero inoxidable.",
+    "code": "C022",
+    "price": 5500,
+    "status": true,
+    "stock": 3,
+    "category": "Comederos y bebederos",
+    "thumbnails": [
+      "https://i.ibb.co/5gKMs2yM/candy-style-rosa.webp"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Catit Fuente Bebedera Acero Inoxidable 3L",
+    "description": "Fuente premium con tapa de acero inoxidable.",
+    "code": "C023",
+    "price": 42990,
+    "status": true,
+    "stock": 2,
+    "category": "Comederos y bebederos",
+    "thumbnails": [
+      "https://i.ibb.co/7dcQVqGv/catit-flower-fountain-acero-inoxidable-led.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Catit Play Treat Puzzle",
+    "description": "Comedero interactivo o laberinto de snacks.",
+    "code": "C024",
+    "price": 20990,
+    "status": true,
+    "stock": 1,
+    "category": "Comederos y bebederos",
+    "thumbnails": [
+      "https://i.ibb.co/Q3Qnw17t/catit-play-treat-puzzle.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Pawise Arnés con Correa para Gatitos",
+    "description": "Arnés ajustable con correa liviana para gatitos.",
+    "code": "C025",
+    "price": 6000,
+    "status": true,
+    "stock": 2,
+    "category": "Collares y arneses",
+    "thumbnails": [
+      "https://i.ibb.co/m5kqxhqc/arnes-con-correa-pawise-color.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Arnés Gato Vestido Satinado",
+    "description": "Arnés ajustable con vestido en tela satinada.",
+    "code": "C026",
+    "price": 6000,
+    "status": true,
+    "stock": 2,
+    "category": "Collares y arneses",
+    "thumbnails": [
+      "https://i.ibb.co/5g6sYC5H/arnes-vestido-negro.webp"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Wonder Cat Collar Lazo Cuadrillé",
+    "description": "Collar ajustable antiahorque con corbatín.",
+    "code": "C027",
+    "price": 3500,
+    "status": true,
+    "stock": 4,
+    "category": "Collares y arneses",
+    "thumbnails": [
+      "https://i.ibb.co/nN3dHV2X/collar-lazo-cuadrille.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Furminator Cepillo Deluxe Gato Large",
+    "description": "Cepillo deshedding profesional para gatos.",
+    "code": "C028",
+    "price": 7990,
+    "status": true,
+    "stock": 3,
+    "category": "Aseo e higiene",
+    "thumbnails": [
+      "https://i.ibb.co/jjb2yX8/furminator-large-cat.webp"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "PlaqueOff Polvo Gatos 40gr",
+    "description": "Suplemento natural para la salud bucal felina.",
+    "code": "C029",
+    "price": 20990,
+    "status": true,
+    "stock": 2,
+    "category": "Aseo e higiene",
+    "thumbnails": [
+      "https://i.ibb.co/Vpw3hXZS/plaqueoff-polvo-40g-gato.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Skouts Honor Destructor Orina y Olores",
+    "description": "Limpiador enzimático formulado en base a plantas.",
+    "code": "C030",
+    "price": 18000,
+    "status": true,
+    "stock": 2,
+    "category": "Aseo e higiene",
+    "thumbnails": [
+      "https://i.ibb.co/TMpPV4fq/skoutshonor-coral.webp"
+    ]
+  }
+]
