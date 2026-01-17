@@ -1,9 +1,9 @@
-## Backend I – Entrega N°1
+# Backend I – Entrega N°1
 
 Proyecto correspondiente a la Primera Entrega del curso Backend I de Coderhouse.
 Consiste en una API REST desarrollada con Node.js y Express, con persistencia en archivos JSON, para la gestión de productos y carritos de compra.
 
-# Tecnologías
+## Tecnologías
 
 Node.js
 
@@ -13,7 +13,7 @@ JavaScript (ES Modules)
 
 Persistencia con sistema de archivos (fs)
 
-# Estructura y funcionamiento
+## Estructura y funcionamiento
 
 El servidor escucha en el puerto 8080 y expone los siguientes grupos de rutas:
 
@@ -23,7 +23,7 @@ El servidor escucha en el puerto 8080 y expone los siguientes grupos de rutas:
 
 Se utilizó Express Router para organizar las rutas, tal como lo indica la consigna, aun cuando este contenido se encuentra en desarrollo en clases posteriores.
 
-# Decisiones de implementación
+## Decisiones de implementación
 
 La persistencia se realiza mediante los archivos products.json y carts.json.
 
