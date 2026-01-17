@@ -29,8 +29,11 @@ router.get("/:pid", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    await productManager.addProduct(req.body);
-    res.status(201).json({ message: "Producto agregado correctamente" });
+    const newProduct = await productManager.addProduct(req.body);
+    res.status(201).json({
+      message: "Producto agregado correctamente",
+      product: newProduct,
+    });
   } catch (error) {
     if (
       error.message.includes("todos sus campos") ||
@@ -45,11 +48,17 @@ router.post("/", async (req, res) => {
 
 router.put("/:pid", async (req, res) => {
   const pid = Number(req.params.pid);
-  const updatedProduct = req.body;
+  const updatedProductBody = req.body;
 
   try {
-    const product = await productManager.updateProduct(pid, updatedProduct);
-    res.status(200).json(product);
+    const updatedProduct = await productManager.updateProduct(
+      pid,
+      updatedProductBody,
+    );
+    res.status(201).json({
+      message: "Producto actualizado correctamente",
+      product: updatedProduct,
+    });
   } catch (error) {
     if (error.message.includes("no encontrado")) {
       res.status(404).json({ error: error.message });

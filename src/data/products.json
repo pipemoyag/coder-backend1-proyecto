@@ -4,13 +4,11 @@
     "title": "Leonardo Lata Ternera, Venado y Camote 400gr",
     "description": "Alimento húmedo super-premium para gatos adultos, con carnes selectas de ternera y venado y un toque de camote para una digestión suave. Enriquecido con aceite de salmón para un pelaje saludable y un poco de catnip para mayor disfrute.",
     "code": "C001",
-    "price": 1000000,
+    "price": 4890,
     "status": true,
     "stock": 6,
     "category": "Alimentos",
-    "thumbnails": [
-      "https://i.ibb.co/ynY1306v/leonardo-ternera-venado.png"
-    ]
+    "thumbnails": ["https://i.ibb.co/ynY1306v/leonardo-ternera-venado.png"]
   },
   {
     "id": 2,
@@ -21,9 +19,7 @@
     "status": true,
     "stock": 1,
     "category": "Alimentos",
-    "thumbnails": [
-      "https://i.ibb.co/ynsrfV64/acana-bountiful-catch-cat.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/ynsrfV64/acana-bountiful-catch-cat.jpg"]
   },
   {
     "id": 3,
@@ -73,9 +69,7 @@
     "status": true,
     "stock": 2,
     "category": "Snacks",
-    "thumbnails": [
-      "https://i.ibb.co/23FT9dvK/churu-tuna-variety-50-un.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/23FT9dvK/churu-tuna-variety-50-un.webp"]
   },
   {
     "id": 7,
@@ -86,9 +80,7 @@
     "status": true,
     "stock": 10,
     "category": "Catnip y matatabi",
-    "thumbnails": [
-      "https://i.ibb.co/NdSjzzbr/catnip-erizo-2.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/NdSjzzbr/catnip-erizo-2.webp"]
   },
   {
     "id": 8,
@@ -99,9 +91,7 @@
     "status": true,
     "stock": 5,
     "category": "Catnip y matatabi",
-    "thumbnails": [
-      "https://i.ibb.co/m55hQLrj/catnip-bioline.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/m55hQLrj/catnip-bioline.webp"]
   },
   {
     "id": 9,
@@ -112,9 +102,7 @@
     "status": true,
     "stock": 4,
     "category": "Catnip y matatabi",
-    "thumbnails": [
-      "https://i.ibb.co/m5sVMpng/spray-matatabi-bioline.png"
-    ]
+    "thumbnails": ["https://i.ibb.co/m5sVMpng/spray-matatabi-bioline.png"]
   },
   {
     "id": 10,
@@ -125,9 +113,7 @@
     "status": true,
     "stock": 1,
     "category": "Arenas y areneros",
-    "thumbnails": [
-      "https://i.ibb.co/LDbND4R7/hey-arenero-abierto.png"
-    ]
+    "thumbnails": ["https://i.ibb.co/LDbND4R7/hey-arenero-abierto.png"]
   },
   {
     "id": 11,
@@ -151,9 +137,7 @@
     "status": true,
     "stock": 3,
     "category": "Arenas y areneros",
-    "thumbnails": [
-      "https://i.ibb.co/rfk6R28V/pala-metalica.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/rfk6R28V/pala-metalica.webp"]
   },
   {
     "id": 13,
@@ -164,9 +148,7 @@
     "status": true,
     "stock": 3,
     "category": "Juguetes",
-    "thumbnails": [
-      "https://i.ibb.co/wr0rQ2Yb/flapping-toy.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/wr0rQ2Yb/flapping-toy.webp"]
   },
   {
     "id": 14,
@@ -177,9 +159,7 @@
     "status": true,
     "stock": 8,
     "category": "Juguetes",
-    "thumbnails": [
-      "https://i.ibb.co/LzYD1Yxw/pelota-automatica-s.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/LzYD1Yxw/pelota-automatica-s.webp"]
   },
   {
     "id": 15,
@@ -190,9 +170,7 @@
     "status": true,
     "stock": 1,
     "category": "Juguetes",
-    "thumbnails": [
-      "https://i.ibb.co/0S4wz7D/catit-wave-circuit.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/0S4wz7D/catit-wave-circuit.jpg"]
   },
   {
     "id": 16,
@@ -203,9 +181,7 @@
     "status": true,
     "stock": 2,
     "category": "Rascadores",
-    "thumbnails": [
-      "https://i.ibb.co/GQ0V4LQH/catbook-2.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/GQ0V4LQH/catbook-2.webp"]
   },
   {
     "id": 17,
@@ -216,9 +192,7 @@
     "status": true,
     "stock": 2,
     "category": "Rascadores",
-    "thumbnails": [
-      "https://i.ibb.co/dJVZ8Tyz/refugio-rascador-casa-azul.png"
-    ]
+    "thumbnails": ["https://i.ibb.co/dJVZ8Tyz/refugio-rascador-casa-azul.png"]
   },
   {
     "id": 18,
@@ -229,9 +203,7 @@
     "status": true,
     "stock": 5,
     "category": "Rascadores",
-    "thumbnails": [
-      "https://i.ibb.co/fJPrdpZ/rascador-redondo.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/fJPrdpZ/rascador-redondo.jpg"]
   },
   {
     "id": 19,
@@ -242,9 +214,7 @@
     "status": true,
     "stock": 2,
     "category": "Camas y refugios",
-    "thumbnails": [
-      "https://i.ibb.co/hJN27bP1/Cama-redonda-gris.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/hJN27bP1/Cama-redonda-gris.jpg"]
   },
   {
     "id": 20,
@@ -255,9 +225,7 @@
     "status": true,
     "stock": 1,
     "category": "Camas y refugios",
-    "thumbnails": [
-      "https://i.ibb.co/pvFf84Z2/cama-brnx-llama.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/pvFf84Z2/cama-brnx-llama.jpg"]
   },
   {
     "id": 21,
@@ -268,9 +236,7 @@
     "status": true,
     "stock": 1,
     "category": "Camas y refugios",
-    "thumbnails": [
-      "https://i.ibb.co/0R13mwKM/bolso-transporte.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/0R13mwKM/bolso-transporte.webp"]
   },
   {
     "id": 22,
@@ -281,9 +247,7 @@
     "status": true,
     "stock": 3,
     "category": "Comederos y bebederos",
-    "thumbnails": [
-      "https://i.ibb.co/5gKMs2yM/candy-style-rosa.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/5gKMs2yM/candy-style-rosa.webp"]
   },
   {
     "id": 23,
@@ -307,9 +271,7 @@
     "status": true,
     "stock": 1,
     "category": "Comederos y bebederos",
-    "thumbnails": [
-      "https://i.ibb.co/Q3Qnw17t/catit-play-treat-puzzle.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/Q3Qnw17t/catit-play-treat-puzzle.jpg"]
   },
   {
     "id": 25,
@@ -333,9 +295,7 @@
     "status": true,
     "stock": 2,
     "category": "Collares y arneses",
-    "thumbnails": [
-      "https://i.ibb.co/5g6sYC5H/arnes-vestido-negro.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/5g6sYC5H/arnes-vestido-negro.webp"]
   },
   {
     "id": 27,
@@ -346,9 +306,7 @@
     "status": true,
     "stock": 4,
     "category": "Collares y arneses",
-    "thumbnails": [
-      "https://i.ibb.co/nN3dHV2X/collar-lazo-cuadrille.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/nN3dHV2X/collar-lazo-cuadrille.jpg"]
   },
   {
     "id": 28,
@@ -359,9 +317,7 @@
     "status": true,
     "stock": 3,
     "category": "Aseo e higiene",
-    "thumbnails": [
-      "https://i.ibb.co/jjb2yX8/furminator-large-cat.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/jjb2yX8/furminator-large-cat.webp"]
   },
   {
     "id": 29,
@@ -372,9 +328,7 @@
     "status": true,
     "stock": 2,
     "category": "Aseo e higiene",
-    "thumbnails": [
-      "https://i.ibb.co/Vpw3hXZS/plaqueoff-polvo-40g-gato.jpg"
-    ]
+    "thumbnails": ["https://i.ibb.co/Vpw3hXZS/plaqueoff-polvo-40g-gato.jpg"]
   },
   {
     "id": 30,
@@ -385,8 +339,6 @@
     "status": true,
     "stock": 2,
     "category": "Aseo e higiene",
-    "thumbnails": [
-      "https://i.ibb.co/TMpPV4fq/skoutshonor-coral.webp"
-    ]
+    "thumbnails": ["https://i.ibb.co/TMpPV4fq/skoutshonor-coral.webp"]
   }
 ]

@@ -55,9 +55,11 @@ class ProductManager {
 
     let newId = productsList[productsList.length - 1]?.id + 1 || 1;
 
-    productsList.push({ ...product, id: newId });
+    const newProduct = { ...product, id: newId };
+    productsList.push(newProduct);
 
     await writeFile(this.path, productsList);
+    return newProduct;
   }
 
   async updateProduct(id, product) {
