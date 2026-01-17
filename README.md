@@ -39,4 +39,4 @@ El endpoint PUT /api/products/:pid fue implementado como un PUT estricto:
 
 - Valida que no exista colisión de "code" con otros productos.
 
-- Los IDs de los carritos se generan en formato string con padding (ej: 0001, 0002, etc.).
+Los IDs de los carritos se generan en formato string con padding (ej: 0001, 0002, etc.).
