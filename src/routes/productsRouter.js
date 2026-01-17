@@ -72,7 +72,11 @@ router.delete("/:pid", async (req, res) => {
       message: `Producto con id ${pid} eliminado correctamente`,
     });
   } catch (error) {
-    res.status(500).json({ error: "Error interno del servidor" });
+    if (error.message.includes("no encontrado")) {
+      res.status(404).json({ error: error.message });
+    } else {
+      res.status(500).json({ error: "Error interno del servidor" });
+    }
   }
 });
 
