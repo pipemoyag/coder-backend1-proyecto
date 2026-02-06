@@ -25,6 +25,8 @@ El servidor escucha en el puerto 8080 y expone los siguientes endpoints:
 
 /api/carts
 
+/home
+
 /realtimeproducts
 
 Se continúa utilizando Express Router para organizar las rutas de la aplicación.
