@@ -1,5 +1,6 @@
 import { Router } from "express";
 import ProductManager from "../managers/ProductManager.js";
+import { io } from "../app.js";
 
 const router = Router(); // router es un mini-express, sirve para agrupar rutas relacionadas
 const productManager = new ProductManager("./src/data/products.json");
@@ -30,6 +31,10 @@ router.get("/:pid", async (req, res) => {
 router.post("/", async (req, res) => {
   try {
     const newProduct = await productManager.addProduct(req.body);
+
+    const products = await productManager.getProducts();
+    io.emit("updatedProducts", products);
+
     res.status(201).json({
       message: "Producto agregado correctamente",
       product: newProduct,
@@ -77,6 +82,10 @@ router.delete("/:pid", async (req, res) => {
 
   try {
     await productManager.deleteProductById(pid);
+
+    const products = await productManager.getProducts();
+    io.emit("updatedProducts", products);
+
     res.status(200).json({
       message: `Producto con id ${pid} eliminado correctamente`,
     });

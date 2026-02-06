@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h1 class="mb-4">{{title}}</h1>
+
+  <div class="row" id="products-container">
+    {{#each products}}
+      <div class="col-md-4 mb-4" id="product-{{id}}">
+        <div class="card h-100 shadow-sm">
+          <img
+            src="{{this.thumbnails.[0]}}"
+            class="card-img-top"
+            alt="{{this.title}}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">$ {{this.price}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+{{! Conectamos socket con el cliente, este archivo se comparte automaticamente cuando instalamos socket.io }}
+<script src="/socket.io/socket.io.js"></script>
+{{! Script donde vamos a estar trabajando, en la parte del cliente, con socket }}
+{{! Lo busca desde la carpeta public, ya que ahi definimos los archivos estaticos, como no indicamos ruta, considera como base "/" }}
+<script src="/js/main.js"></script>
