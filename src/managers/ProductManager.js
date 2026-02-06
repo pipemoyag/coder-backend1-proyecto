@@ -106,17 +106,7 @@ class ProductManager {
       throw new Error(`Ya existe un producto con code ${code}`);
     }
 
-    const updatedProduct = {
-      id, // id fijo
-      title,
-      description,
-      code,
-      price,
-      status,
-      stock,
-      category,
-      thumbnails,
-    };
+    const updatedProduct = { ...product, id };
 
     productsList[productIndex] = updatedProduct;
 

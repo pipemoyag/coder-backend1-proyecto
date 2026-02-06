@@ -38,6 +38,7 @@ class CartManager {
   }
 
   async addProductToCart(cid, pid) {
+    // PENDIENTE VERIFICACION DE SI EL PRODUCTO EXISTE EN EL CATALOGO DE PRODUCTOS (PID)
     const cartsList = await this.getCarts();
     const cartIndex = cartsList.findIndex((cart) => cart.id === cid);
     if (cartIndex === -1) {

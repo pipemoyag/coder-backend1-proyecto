@@ -1,6 +1,6 @@
 import express from "express";
-import productsRouter from "./src/routes/productsRouter.js";
-import cartsRouter from "./src/routes/cartsRouter.js";
+import productsRouter from "./routes/products.routes.js";
+import cartsRouter from "./routes/carts.routes.js";
 
 const server = express();
 
