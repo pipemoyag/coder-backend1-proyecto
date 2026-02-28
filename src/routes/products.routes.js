@@ -1,6 +1,7 @@
 import { Router } from "express";
 import ProductModel from "../models/product.model.js";
 
+// usamos io como parametro para evitar referencia circular, ahora es una función que recibe io y devuelve el router, en lugar de usar el router directamente como antes
 export default (io) => {
   const router = Router(); // router es un mini-express, sirve para agrupar rutas relacionadas
 

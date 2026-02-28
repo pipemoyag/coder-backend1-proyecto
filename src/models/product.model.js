@@ -1,8 +1,6 @@
 import { Schema, model } from "mongoose";
 import mongoosePaginate from "mongoose-paginate-v2";
 
-const productCollection = "products";
-
 const productSchema = new Schema(
   {
     title: {
@@ -39,11 +37,11 @@ const productSchema = new Schema(
       default: [],
     },
   },
-  { timestamps: true },
+  { timestamps: true }, // para que mongoose cree automáticamente los campos createdAt y updatedAt
 );
 
 productSchema.plugin(mongoosePaginate);
 
-const ProductModel = model(productCollection, productSchema);
+const ProductModel = model("products", productSchema);
 
 export default ProductModel;
