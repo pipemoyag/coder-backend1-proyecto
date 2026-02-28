@@ -1,78 +1,166 @@
-# Backend I – Entrega N°2
+# Backend I – Entrega Final
 
-Proyecto correspondiente a la Segunda Entrega del curso Backend I de Coderhouse.
-Se extiende la API REST desarrollada en la entrega anterior incorporando Handlebars y WebSockets (Socket.io) para manejar vistas dinámicas y actualizaciones en tiempo real.
+Proyecto correspondiente a la Entrega Final del curso Backend I de Coderhouse.
 
-## Tecnologías
+El proyecto evolucionó desde una API con persistencia en archivos JSON y actualización en tiempo real con WebSockets, hacia una API profesionalizada con MongoDB y Mongoose, incorporando paginación, validaciones y separación de responsabilidades.
 
-Node.js
+---
 
-Express
+## 🚀 Tecnologías
 
-Express Handlebars
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- mongoose-paginate-v2
+- Express Handlebars
+- Socket.io
+- Bootstrap
+- JavaScript (ES Modules)
 
-Socket.io
+---
 
-JavaScript (ES Modules)
+## 🗄️ Evolución del Proyecto
 
-Persistencia con sistema de archivos (fs / JSON)
+### 🔹 Entregas Iniciales
 
-## Estructura y funcionamiento
+- Persistencia mediante archivos `products.json` y `carts.json`.
+- Uso de clases `ProductManager` y `CartManager`.
+- Implementación de WebSockets para actualización en tiempo real de productos.
+- Separación de rutas con Express Router.
 
-El servidor escucha en el puerto 8080 y expone los siguientes endpoints:
+### 🔹 Migración a MongoDB (Entrega Final)
 
-/api/products
+- Eliminación de la lógica basada en archivos.
+- Migración completa a MongoDB utilizando Mongoose.
+- Importación inicial de productos desde `products.json` a la base de datos.
+- Modelado de `Product` y `Cart`.
+- Uso de `populate()` para relacionar productos dentro de carritos.
 
-/api/carts
+---
 
-/home
+## 📦 Endpoints - Productos (/api/products)
 
-/realtimeproducts
+Todos los endpoints fueron refactorizados para trabajar directamente con MongoDB.
 
-Se continúa utilizando Express Router para organizar las rutas de la aplicación.
+### GET /
 
-## Vistas
+Soporta:
 
-home.handlebars: muestra la lista completa de productos disponibles.
+- `limit`
+- `page`
+- `sort` (asc / desc por precio)
+- `query` (filtrado por categoría o disponibilidad)
 
-realTimeProducts.handlebars: muestra la lista de productos en tiempo real.
+Incluye:
 
-La vista realTimeProducts se actualiza automáticamente cada vez que se agrega o elimina un producto, sin necesidad de recargar la página, gracias al uso de WebSockets.
+- Paginación con `mongoose-paginate-v2`
+- Links dinámicos (`prevLink`, `nextLink`) que respetan los query params originales
+- Búsqueda case-insensitive para categoría usando `$regex` con opción `i`
+- Uso de `lean()` para optimización de rendimiento
 
-## WebSockets y actualización en tiempo real
+### GET /:pid
 
-Se configuró un servidor de Socket.io anclado al servidor HTTP principal.
+- Obtiene un producto por ID
+- Maneja posibles errores
 
-Cada vez que ocurre una modificación en la lista de productos (agregar o eliminar producto), el servidor emite un evento con la lista actualizada, que es recibida por el cliente y renderizada dinámicamente.
+### POST /
 
-## IMPORTANTE: Sobre la NO implementación de formularios
+- Crea un producto en MongoDB
+- Validación de campos requeridos
 
-La consigna sugiere el uso de formularios en la vista realTimeProducts para crear y eliminar productos mediante WebSockets, pero aclara explícitamente que no es la mejor práctica.
+### PUT /:pid
 
-En base a esto, se decidió no implementar formularios, y en su lugar:
+- Actualiza un producto existente
+- Uso de `returnDocument: 'after'` (evitando warnings deprecados de Mongoose)
 
-- Mantener la creación y eliminación de productos a través de endpoints HTTP.
+### DELETE /:pid
 
-- Utilizar Socket.io únicamente para notificar y sincronizar en tiempo real los cambios hacia las vistas.
+- Elimina un producto por ID
 
-Esta decisión busca respetar la consigna sin forzar una solución que la misma documentación considera subóptima, manteniendo una separación clara entre lógica HTTP y comunicación en tiempo real.
+---
 
-## Decisiones de implementación
+## 🛒 Endpoints - Carritos (/api/carts)
 
-Persistencia mediante archivos products.json y carts.json.
+Se profesionalizó completamente la lógica de carritos.
 
-Separación de responsabilidades usando ProductManager y CartManager.
+### Funcionalidades implementadas
 
-El GET /api/carts/:cid devuelve exclusivamente la lista de productos del carrito, según la consigna.
+- Crear carrito
+- Obtener carrito por ID (con `populate` de productos)
+- Agregar producto al carrito
+- Actualizar cantidad de producto en carrito
+- Eliminar producto específico del carrito
+- Vaciar carrito completo
 
-El endpoint PUT /api/products/:pid fue implementado como un PUT estricto:
+### Validaciones agregadas
 
-- Requiere todos los campos del producto.
+- Verificación de existencia del producto antes de agregarlo al carrito
+- Respuestas HTTP consistentes
 
-- No permite modificar el id.
+---
 
-- Valida colisiones del campo code.
+## 🖥️ Vistas (Handlebars)
 
-Los IDs de los carritos se generan como strings con padding (0001, 0002, etc.).
+Se implementaron vistas dinámicas integradas con la API:
 
-Actualización en tiempo real de productos usando WebSockets y renderizado dinámico en HTML.
+- Listado de productos con paginación
+- Filtros activos respetados entre páginas
+- Barra superior sticky con botón "Ver Carrito" usando Bootstrap
+- Vista de carrito con renderizado de productos relacionados
+
+Por simplicidad se duplicó parte de la lógica de consulta con paginación entre rutas API y rutas de vistas.
+
+---
+
+## 🔌 WebSockets
+
+Se mantiene la implementación con Socket.io:
+
+- Servidor WebSocket anclado al servidor HTTP principal
+- Emisión de eventos ante cambios en productos
+- Sincronización en tiempo real en vistas dinámicas
+
+Se implementó como mejora arquitectónica eliminar posibles dependencias circulares (por ejemplo, pasar `io` como parámetro en lugar de importarlo directamente).
+
+---
+
+## 🏗️ Mejoras de Arquitectura
+
+- Eliminación de clases basadas en filesystem
+- Separación clara entre:
+  - Modelos
+  - Rutas API
+  - Rutas de vistas
+
+- Uso consistente de async/await
+- Manejo de errores estructurado
+
+---
+
+## ✅ Estado Final del Proyecto
+
+✔ Migración completa a MongoDB
+✔ Endpoints REST profesionalizados
+✔ Paginación avanzada con filtros y ordenamiento
+✔ Validaciones de integridad y existencia de recursos
+✔ Relaciones entre colecciones usando populate
+✔ Vistas dinámicas funcionales
+✔ Actualización en tiempo real con WebSockets
+✔ Proyecto listo para evaluación final
+
+---
+
+## 🔮 Posibles mejoras futuras
+
+- Implementar autenticación y autorización
+- Asociar carrito a usuario autenticado
+- Middleware global de manejo de errores
+- Tests automatizados
+- Deploy en servicio cloud (Render, Railway, etc.)
+
+---
+
+## 👨‍💻 Autor
+
+Proyecto desarrollado como parte del curso Backend I – Coderhouse.

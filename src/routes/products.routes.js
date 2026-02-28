@@ -20,7 +20,7 @@ export default (io) => {
         if (query === "true" || query === "false") {
           filter.status = query === "true";
         } else {
-          filter.category = query;
+          filter.category = { $regex: query, $options: "i" }; // por simplicidad se usa regex en lugar de haber usado toLowerCase al haber definido el schema
         }
       }
 

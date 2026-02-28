@@ -1,0 +1,58 @@
+<div class="sticky-top bg-light p-3 text-end shadow-sm">
+  <a href="/carts/{{cartId}}" class="btn btn-primary">
+    🛒 Ver Carrito
+  </a>
+</div>
+<div class="container mt-4">
+  <h1 class="mb-4">{{title}}</h1>
+
+  <div class="row">
+    {{#each products}}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img
+            src="{{this.thumbnails.[0]}}"
+            class="card-img-top"
+            alt="{{this.title}}"
+          />
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">$ {{this.price}}</p>
+
+            <a href="/products/{{this._id}}" class="btn btn-primary mb-2">
+              Ver detalles
+            </a>
+
+            <button
+              class="btn btn-success add-to-cart-btn"
+              data-product-id="{{this._id}}"
+            >
+              Agregar al carrito
+            </button>
+
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <!-- Paginación -->
+  <div class="d-flex justify-content-between mt-4 mb-4">
+    {{#if hasPrevPage}}
+      <a href="/products?page={{prevPage}}" class="btn btn-outline-dark">
+        Anterior
+      </a>
+    {{/if}}
+
+    <span>Página {{page}} de {{totalPages}}</span>
+
+    {{#if hasNextPage}}
+      <a href="/products?page={{nextPage}}" class="btn btn-outline-dark">
+        Siguiente
+      </a>
+    {{/if}}
+  </div>
+</div>
+
+<script src="/js/addToCart.js"></script>
